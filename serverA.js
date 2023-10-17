@@ -18,8 +18,8 @@ app.post('/process-image', async (req, res) => {
 
     // Execute the Python script for image segmentation (GrabCut)
     const pythonScriptPath = path.join(__dirname, 'ObjectDetection.py');
-    const inputImagePath = path.join(__dirname, 'input_image.jpg');
-    const outputImagePath = path.join(__dirname, 'output_image.jpg');
+    const inputImagePath = path.join(__dirname, 'input_image.jpeg');
+    const outputImagePath = path.join(__dirname, 'output_image.jpeg');
 
     const pythonProcess = spawn('python', [pythonScriptPath, inputImagePath, outputImagePath]);
 

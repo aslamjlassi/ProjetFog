@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import tensorflow as tf
 import numpy as np
-from PIL import Image
 import sys
 
 # Load your pre-trained object detection model in .pb format
